@@ -1,0 +1,143 @@
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+  }
+
+  /*
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-view{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+}
+
+.box-left{
+    width: 50%;
+}
+
+.box-right{
+    width: 50%;
+}
+
+.header{
+    margin: 40px 40px;
+}
+
+.form-content{
+    width: 480px;
+    background-color: var(--form-background);
+
+    margin: 80px;
+    padding: 40px 80px;
+}
+
+.text-title{
+    display: flex;
+}
+
+.subtitle{
+    color: var(--text-base);
+    font-size: 12px;
+
+    padding-top: 7px;
+    margin-bottom: 20px;
+}
+
+.text-title h1{
+    font-size: 24px;
+    color: var(--text-title);
+
+    
+    padding-left: 10px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label{
+    color: var(--text-base);
+}
+
+.formulario input{
+
+    padding: 12px;
+    background-color: var(--form-background);
+    outline: none;
+    border: 1px solid var(--text-base);
+    border-radius: 5px;
+    color: var(--text-base);
+
+    margin-bottom: 15px;
+
+  
+}
+
+input .email{
+  background: url("./img/mail.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 12px;
+
+}
+
+.remember{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.remember p{
+    color: var(--primary-color);
+}
+
+#checkbox input{
+    color: var(--form-background);
+    border-radius: 15px;
+    border-radius: 1px solid var(--text-base);
+    border-radius: 30px;
+}
+
+.button{
+
+    padding: 12px;
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: var(--form-background);
+
+    margin-bottom: 15px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.create-account{
+    color: var(--primary-color);
+    font-size: 12px;
+    text-align: center;
+}
+
+.create-account a{
+    color: var(--primary-color);
+    text-decoration: none;
+}

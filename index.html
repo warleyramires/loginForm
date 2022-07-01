@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container-view">
+      <div class="box-left">
+        <div class="header">
+          <img src="./img/logo.svg" alt="logo da comp.in" />
+        </div>
+
+        <div class="box-form">
+          <div class="form-content">
+            <div class="text-title">
+              <img
+                src="./img/log-in.svg"
+                alt="Seta seguido de titulo do formulário"
+              />
+              <h1>Faça seu login</h1>
+            </div>
+
+            <p class="subtitle">Entre com suas informações de cadastro.</p>
+
+            <form action="post" class="formulario">
+              <label for="email">E-mail</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                class="email"
+                placeholder="Digite seu e-mail"
+              />
+
+              <label for="password">Senha</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="password"
+                placeholder="Digite sua senha"
+              />
+
+              <div class="remember">
+                <div class="check">
+                  <input type="checkbox" name="checkbox" id="checkbox" />
+                  <label for="checkbox">Lembre-me</label>
+                </div>
+                <p>Esqueci minha senha</p>
+              </div>
+              <button class="button">Entrar</button>
+              <p class="create-account">
+                Não tem uma conta?<strong><a href="#"> Registre-se</a></strong>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-right">
+        <div class="image">
+          <img
+            src="./img/side-image-2x.jpg"
+            alt="imagem de um automovel com uma barraca"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
