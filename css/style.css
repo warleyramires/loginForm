@@ -20,6 +20,8 @@ font-family: 'Roboto', sans-serif;
 body{
     background-color: var(--background);
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+
 }
 
 .container-view{
@@ -27,12 +29,20 @@ body{
     grid-template-columns: repeat(2, 1fr) ;
 }
 
+/*
 .box-left{
     width: 50%;
-}
+} 
+*/
 
 .box-right{
-    width: 50%;
+    
+    
+    background-image: url('../img/side-image-2x.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
 
 .header{
@@ -40,12 +50,14 @@ body{
 }
 
 .form-content{
+
     width: 480px;
     background-color: var(--form-background);
 
-    margin: 80px;
+    margin: 220px;
     padding: 40px 80px;
 }
+
 
 .text-title{
     display: flex;
@@ -85,17 +97,51 @@ body{
     border-radius: 5px;
     color: var(--text-base);
 
-    margin-bottom: 15px;
-
+    margin-bottom: 18px;
+    padding-left: 30px;
   
 }
 
-input .email{
-  background: url("./img/mail.svg");
-  background-repeat: no-repeat;
-  background-position: 10px 12px;
+.formulario input:focus{
+    border: 2px solid var(--primary-color);
+    outline: #ffc632;
+   
+}
+
+.email{
+    background-image: url('../img/mail.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    
 
 }
+
+.formulario .email:focus{
+   
+    background-image: url('../img/mail-focus.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.password{
+    background-image: url('../img/lock.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    
+
+}
+
+
+
+
+.formulario .password:focus{
+   
+    background-image: url('../img/lock-focus.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+
 
 .remember{
     display: flex;
@@ -129,6 +175,8 @@ input .email{
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
+
+    cursor: pointer;
 }
 
 .create-account{
@@ -140,4 +188,9 @@ input .email{
 .create-account a{
     color: var(--primary-color);
     text-decoration: none;
+}
+
+.image{
+    height: 100%;
+    width: 500px;
 }
