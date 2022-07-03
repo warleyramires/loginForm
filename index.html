@@ -37,11 +37,12 @@
             <form action="post" class="formulario">
               <label for="email">E-mail</label>
               <input
-                type="text"
+                type="email"
                 name="email"
                 id="email"
                 class="email"
                 placeholder="Digite seu e-mail"
+                required
               />
 
               <label for="password">Senha</label>
@@ -50,7 +51,7 @@
                 name="password"
                 id="password"
                 class="password lockpassword"
-                
+                required
                 placeholder="Digite sua senha"
               />
 
@@ -61,7 +62,8 @@
                 </div>
                 <p>Esqueci minha senha</p>
               </div>
-              <button class="button">Entrar</button>
+              <button type="submit" class="button">Entrar</button>
+              <div class="error"></div>
               <p class="create-account">
                 Não tem uma conta?<strong><a href="#"> Registre-se</a></strong>
               </p>
@@ -70,14 +72,9 @@
         </div>
       </div>
 
-      <div class="box-right">
-        <!--<div class="image">
-          <img
-            src="./img/side-image-2x.jpg"
-            alt="imagem de um automovel com uma barraca"
-          />
-        </div>-->
-      </div>
+      <div class="box-right"></div>
     </div>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
